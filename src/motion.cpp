@@ -296,7 +296,7 @@ void load_filament_into_extruder()
         tmc2130_init_axis_current_stealth(AX_PUL, current_holding_stealth[AX_PUL],
                                           current_running_stealth[AX_PUL] / 4);
     }
-    move_pulley(650, filament_lookup_table[7][filament_type[active_extruder]]);
+    //move_pulley(650, filament_lookup_table[7][filament_type[active_extruder]]);
     shr16_clr_ena(AX_PUL);
     engage_filament_pulley(false); // release contact with filament
 
